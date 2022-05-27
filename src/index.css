@@ -1,0 +1,223 @@
+:root{
+  /* --primaryClr:#292929; */
+  --secondClr:#03a87c;
+  --thirdClr:#0000008a;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+ 
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a{
+  color:var(--primaryClr);
+  text-decoration: none;
+}
+.app-wrap{
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0 20px;
+  min-height: calc(100vh - 200px);
+}
+.App{
+ position: relative;
+ max-width: 100%;
+
+}
+
+.wrap-to-border{
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)
+}
+
+  .navbar-wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 20px;
+    color:var(--primaryClr);
+    flex-wrap: wrap;
+    /* border:1px solid pink; */
+    
+  }
+  
+  .right-side{
+    display:grid;
+    grid-template-columns: 30px 90px 110px;
+    grid-column-gap: 10px;
+    grid-template-rows: 1fr;
+    font-size: 16px;
+    margin:0 auto;
+
+  }
+  .btn-join{
+    width: 110px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid var(--secondClr);
+    color: var(--secondClr);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    padding:10px;
+    font-size: 1rem;
+    cursor: pointer;
+   
+  }
+  .signin{
+    text-align: center;
+    align-self: center;
+    padding-bottom: 3px;
+    color:var(--secondClr);
+    cursor: pointer;
+  }
+  .search-wrap{
+    align-self: center;
+    justify-self: right;
+    height: 30px;
+    position: relative;
+    
+  }
+  .search-input{
+    background:rgba(207, 207, 207, 0.164);
+    width: 160px;
+    height:100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none; 
+    display: none;
+  }
+  .fa{
+    width:30px;
+    color:var(--thirdClr);
+    cursor: pointer;
+  }
+  
+  
+  /* category nav */
+  .category-wrap{
+    height: 70px;
+    box-sizing: border-box;
+  }
+  .sticky{
+    position: fixed;
+    top:0; left:0;
+    background:white;
+    height: 70px;
+    z-index: 9999;
+    right:0;
+    margin:0 auto;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.04);
+  }
+  .padding-sticky{
+    padding-top:90px;
+  }
+  .category-list{
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    text-transform: uppercase;
+    align-items: center;
+    font-size:0.95rem;
+    color:var(--thirdClr);
+    overflow-x: scroll;
+    height: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+  }
+  .category-list a{
+    color:var(--thirdClr);
+  }
+  .item{
+    padding: 0 10px;
+  }
+  .left-side{
+    width: 100%;
+    text-align:center;
+  }
+.loader-overlay{
+  position: fixed;
+  width:99vw;
+  height: 100vh;
+  z-index: 999;
+  left:0;
+  top:0;
+  right:0;
+  background:rgba(255, 255, 255);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  height: 200px;
+  width: 100%;
+  background:#1F1F1F;
+  color:rgba(255, 255, 255, 0.534);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  flex-direction: column;
+  padding:0 20px;
+  box-sizing: border-box;
+  
+}
+.footer a{
+  color:rgba(255, 255, 255, 0.808);
+}
+.site{
+    height: 700px;
+  }
+
+
+@media(min-width:460px) {
+
+  .right-side{
+    grid-template-columns: 190px 90px 110px;
+    margin:0;
+  }
+  .navbar-wrap{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .search-input{
+    display: inline;
+  }
+}
+
+@media(min-width:658px){
+  .navbar-wrap{
+    justify-content: space-between;
+  }
+  .left-side{
+    text-align:left;
+    width: 140px;
+  }
+  .category-list{
+    color:var(--thirdClr);
+    overflow-x: hidden;
+    
+  }
+}
