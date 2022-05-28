@@ -9,7 +9,7 @@ render(){
  <div className="wrap-to-border">
         <div className="navbar-wrap">
         <div className="left-side"  >
-            <h1 style={{color: '#970430'}} className="logo"><Link to="/">स्वास्थ्यम्</Link></h1>
+            <h1 style={{color: '#970430'}} className="logo"><Link to="/">Charvaka</Link></h1>
         </div>
         <div className="right-side">
             <div className="search-wrap">
