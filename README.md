@@ -1,5 +1,9 @@
 # Blog layout inspired by Medium.com 
 
+https://new-blog-pink-eta.vercel.app website
+
+https://app.cosmicjs.com/a4b02d10-ddd3-11ec-888f-1f0fa74d0f44/objects/?type=posts for admin
+
 ![Full](https://github.com/cosmicjs/react-cosmedium-blog/blob/master/img/cos.jpeg?raw=true)
 
 # Includes
